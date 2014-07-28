@@ -65,5 +65,13 @@ public class ConverterRomansTest {
 		
 		assertEquals(11, actual);
 	}
+	
+	@Test
+	public void converteTest_IX() {
+		ConverterRomans converter =  new ConverterRomans();
+		int actual = converter.convert("IX");
+		
+		assertEquals(9, actual);
+	}
 
 }
