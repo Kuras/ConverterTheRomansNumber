@@ -19,7 +19,14 @@ public class ConverterRomans {
 	public int convert(String romansNum) {
 		int summary=0;
 		for (int i = romansNum.length() - 1; 0 <= i; i--) {
-			summary += table.get(romansNum.charAt(i));
+			
+			Integer currentNumber = table.get(romansNum.charAt(i)); 
+			if (i!=romansNum.length() - 1 && currentNumber < table.get(romansNum.charAt(i+1))){
+				summary -= currentNumber;
+			} else {
+				summary += currentNumber;
+			}			
+			
 		}
 		return summary;
 	}
