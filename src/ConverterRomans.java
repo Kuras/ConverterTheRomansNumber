@@ -19,7 +19,11 @@ public class ConverterRomans {
 	}
 
 	public int convert(String romansNum) {
-		return table.get(romansNum);
+		int summary=0;
+		for (int i = 0; i < table.size(); i++) {
+			summary += table.get(romansNum.charAt(i));
+		}
+		return summary;
 	}
 
 }
