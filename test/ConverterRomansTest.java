@@ -12,7 +12,10 @@ public class ConverterRomansTest {
 
 	@Test
 	public void converteTest() {
-		fail("Not yet implemented");
+		ConverterRomans converter =  new ConverterRomans();
+		int actual = converter.convert("I");
+		
+		assertEquals(1, actual);
 	}
 
 }
