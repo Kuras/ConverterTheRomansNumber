@@ -11,11 +11,19 @@ public class ConverterRomansTest {
 	}
 
 	@Test
-	public void converteTest() {
+	public void converteTest_I() {
 		ConverterRomans converter =  new ConverterRomans();
 		int actual = converter.convert("I");
 		
 		assertEquals(1, actual);
+	}
+	
+	@Test
+	public void converteTest_V() {
+		ConverterRomans converter =  new ConverterRomans();
+		int actual = converter.convert("V");
+		
+		assertEquals(5, actual);
 	}
 
 }
