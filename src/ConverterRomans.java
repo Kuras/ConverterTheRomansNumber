@@ -18,7 +18,7 @@ public class ConverterRomans {
 
 	public int convert(String romansNum) {
 		int summary=0;
-		for (int i = 0; i < romansNum.length(); i++) {
+		for (int i = romansNum.length() - 1; 0 <= i; i--) {
 			summary += table.get(romansNum.charAt(i));
 		}
 		return summary;
