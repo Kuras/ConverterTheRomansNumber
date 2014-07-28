@@ -7,14 +7,17 @@ public class ConverterRomans {
 	
 	public ConverterRomans() {
 		table = new HashMap<String,Integer>();
+		table.put("I", 1);
+		table.put("V", 5);
+		table.put("X", 10);
+		table.put("L", 50);
+		table.put("C", 100);
+		table.put("D", 500);
+		table.put("M", 1000);
 	}
 
 	public int convert(String romansNum) {
-		if(romansNum == "I") return 1;
-		else if(romansNum == "V") return 5;
-		else if(romansNum == "X") return 10;
-			
-		return 0;
+		return table.get(romansNum);
 	}
 
 }
