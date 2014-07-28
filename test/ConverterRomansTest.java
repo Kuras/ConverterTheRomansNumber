@@ -33,5 +33,15 @@ public class ConverterRomansTest {
 		
 		assertEquals(10, actual);
 	}
+	
+	@Test
+	public void converteTest_L() {
+		ConverterRomans converter =  new ConverterRomans();
+		int actual = converter.convert("L");
+		
+		assertEquals(50, actual);
+	}
+	
+	
 
 }
