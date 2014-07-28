@@ -2,7 +2,10 @@
 public class ConverterRomans {
 
 	public int convert(String romansNum) {
-		return 1;
+		if(romansNum == "I") return 1;
+		else if(romansNum == "V") return 5;
+		
+		return 0;
 	}
 
 }
