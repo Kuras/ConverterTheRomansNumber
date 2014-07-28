@@ -73,5 +73,13 @@ public class ConverterRomansTest {
 		
 		assertEquals(9, actual);
 	}
+	
+	@Test
+	public void converteTest_VIII() {
+		ConverterRomans converter =  new ConverterRomans();
+		int actual = converter.convert("VIII");
+		
+		assertEquals(8, actual);
+	}
 
 }
