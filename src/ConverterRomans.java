@@ -8,6 +8,7 @@ public class ConverterRomans {
 	public ConverterRomans() {
 		table = new HashMap<String,Integer>();
 		table.put("I", 1);
+		table.put("II", 2);
 		table.put("V", 5);
 		table.put("X", 10);
 		table.put("L", 50);
