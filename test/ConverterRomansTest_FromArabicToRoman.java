@@ -20,9 +20,9 @@ public class ConverterRomansTest_FromArabicToRoman {
 	}
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
-		
+	public void testConvert_1toI() {
+		String actual = converterRomans.convertArabicToRomansNum(1);
+		assertEquals("I", actual);
 	}
 
 }

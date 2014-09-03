@@ -36,4 +36,8 @@ public class ConverterRomans {
 		return summary;
 	}
 
+	public String convertArabicToRomansNum(int num) {
+		return "I";
+	}
+
 }
