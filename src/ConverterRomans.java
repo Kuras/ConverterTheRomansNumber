@@ -37,7 +37,15 @@ public class ConverterRomans {
 	}
 
 	public String convertArabicToRomansNum(int num) {
-		return "I";
+		if(num == 1){
+			return "I";
+		} else if (num == 5){
+			return "V";
+		} else if (num == 10){
+			return "X";
+		} 
+		return null;
+			
 	}
 
 }

@@ -24,5 +24,17 @@ public class ConverterRomansTest_FromArabicToRoman {
 		String actual = converterRomans.convertArabicToRomansNum(1);
 		assertEquals("I", actual);
 	}
+	
+	@Test
+	public void testConvert_5toV() {
+		String actual = converterRomans.convertArabicToRomansNum(5);
+		assertEquals("V", actual);
+	}
+	
+	@Test
+	public void testConvert_10toX() {
+		String actual = converterRomans.convertArabicToRomansNum(10);
+		assertEquals("X", actual);
+	}
 
 }
