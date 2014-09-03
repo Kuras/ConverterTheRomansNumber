@@ -1,4 +1,6 @@
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 
 /**
  * @pre 1<2
@@ -36,16 +38,18 @@ public class ConverterRomans {
 		return summary;
 	}
 
-	public String convertArabicToRomansNum(int num) {
-		if(num == 1){
-			return "I";
-		} else if (num == 5){
-			return "V";
-		} else if (num == 10){
-			return "X";
-		} 
-		return null;
+	public Character convertArabicToRomansNum(int num) {
+		return this.getKeyByValue(table, num);
 			
+	}
+	
+	private <T, E> T getKeyByValue(Map<T, E> map, E value) {
+	    for (Entry<T, E> entry : map.entrySet()) {
+	        if (value.equals(entry.getValue())) {
+	            return entry.getKey();
+	        }
+	    }
+	    return null;
 	}
 
 }

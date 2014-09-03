@@ -21,20 +21,20 @@ public class ConverterRomansTest_FromArabicToRoman {
 
 	@Test
 	public void testConvert_1toI() {
-		String actual = converterRomans.convertArabicToRomansNum(1);
-		assertEquals("I", actual);
+		Character actual = converterRomans.convertArabicToRomansNum(1);
+		assertEquals('I', actual.charValue());
 	}
 	
 	@Test
 	public void testConvert_5toV() {
-		String actual = converterRomans.convertArabicToRomansNum(5);
-		assertEquals("V", actual);
+		Character actual = converterRomans.convertArabicToRomansNum(5);
+		assertEquals('V', actual.charValue());
 	}
 	
 	@Test
 	public void testConvert_10toX() {
-		String actual = converterRomans.convertArabicToRomansNum(10);
-		assertEquals("X", actual);
+		Character actual = converterRomans.convertArabicToRomansNum(10);
+		assertEquals('X', actual.charValue());
 	}
 
 }
