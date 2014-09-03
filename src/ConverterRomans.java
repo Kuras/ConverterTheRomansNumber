@@ -1,6 +1,11 @@
 import java.util.HashMap;
 
-
+/**
+ * @pre 1<2
+ * @post hoooo:oooo;dfdfd
+ * @author Baraka
+ *
+ */
 public class ConverterRomans {
 
 	private static HashMap<Character,Integer> table;
