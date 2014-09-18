@@ -38,8 +38,16 @@ public class ConverterRomans {
 		return summary;
 	}
 
-	public Character convertArabicToRomansNum(int num) {
-		return this.getKeyByValue(table, num);
+	public String convertArabicToRomansNum(int num) {
+		String romansNum = "";
+		while (num != 0){
+			if (num > 0 && num < 10){
+				romansNum += this.getKeyByValue(table, num).toString();
+			}else {
+				romansNum += this.getKeyByValue(table, (num % 10)).toString();
+			}
+		}
+		return romansNum;
 			
 	}
 	
